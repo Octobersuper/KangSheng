@@ -629,7 +629,7 @@ public class T_RoomBean {
         return brands_index;
     }
 
-    /**
+    /** 
      * 剔除一张牌 @param brands_index @param brand @throws
      */
     public void RemoveBrand(int index, String[] brand) {
