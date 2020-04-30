@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.LoginLogTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.LoginLogTable">
+        <id column="logid" property="logid" />
+        <result column="backuserid" property="backuserid" />
+        <result column="date" property="date" />
+        <result column="IP" property="IP" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        logid, backuserid, date, IP
+    </sql>
+
+</mapper>

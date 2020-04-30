@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.UserTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.User">
+        <id column="userid" property="userid" />
+        <result column="openid" property="openid" />
+        <result column="avatarurl" property="avatarurl" />
+        <result column="nickname" property="nickname" />
+        <result column="phone" property="phone" />
+        <result column="password" property="password" />
+        <result column="createtime" property="createtime" />
+        <result column="money" property="money" />
+        <result column="diamond" property="diamond" />
+        <result column="state" property="state" />
+        <result column="type" property="type" />
+        <result column="isLogin" property="isLogin" />
+        <result column="remard" property="remard" />
+        <result column="sex" property="sex" />
+        <result column="address" property="address" />
+        <result column="ip" property="ip" />
+        <result column="fId" property="fId" />
+        <result column="role" property="role" />
+        <result column="sdk" property="sdk" />
+        <result column="date" property="date" />
+        <result column="statetext" property="statetext" />
+        <result column="code" property="code" />
+        <result column="isPay" property="isPay" />
+        <result column="text_1" property="text_1" />
+        <result column="text_2" property="text_2" />
+        <result column="text_3" property="text_3" />
+        <result column="text_4" property="text_4" />
+        <result column="text_5" property="text_5" />
+        <result column="number_1" property="number_1" />
+        <result column="number_2" property="number_2" />
+        <result column="number_3" property="number_3" />
+        <result column="number_4" property="number_4" />
+        <result column="number_5" property="number_5" />
+        <result column="zcf_user" property="zcf_user" />
+        <result column="award" property="award" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        userid, openid, avatarurl, nickname, phone, password, createtime, money, diamond, state, type, isLogin, remard, sex, address, ip, fId, role, sdk, date, statetext, code, isPay, text_1, text_2, text_3, text_4, text_5, number_1, number_2, number_3, number_4, number_5, zcf_user, award
+    </sql>
+
+</mapper>

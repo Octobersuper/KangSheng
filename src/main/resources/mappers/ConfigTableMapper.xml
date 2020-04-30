@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.ConfigTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.ConfigTable">
+        <id column="configid" property="configid" />
+        <result column="exit_time" property="exit_time" />
+        <result column="establish_four" property="establish_four" />
+        <result column="establish_two" property="establish_two" />
+        <result column="card_diamond" property="card_diamond" />
+        <result column="max_card" property="max_card" />
+        <result column="max_person" property="max_person" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        configid, exit_time, establish_four, establish_two, card_diamond, max_card, max_person
+    </sql>
+
+</mapper>

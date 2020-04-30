@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.PkRecordTableMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.PkRecordTable">
+        <id column="recordid" property="recordid" />
+        <result column="userid" property="userid" />
+        <result column="number" property="number" />
+        <result column="game_number" property="game_number" />
+        <result column="banker" property="banker" />
+        <result column="roomid" property="roomid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        recordid, userid, number, game_number, banker, roomid
+    </sql>
+
+</mapper>

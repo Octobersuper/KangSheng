@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.GameSystemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.GameSystem">
+        <id column="backuserid" property="backuserid" />
+        <result column="backname" property="backname" />
+        <result column="account" property="account" />
+        <result column="password" property="password" />
+        <result column="date" property="date" />
+        <result column="role" property="role" />
+        <result column="menuone" property="menuone" />
+        <result column="menutwo" property="menutwo" />
+        <result column="menuthree" property="menuthree" />
+        <result column="menufour" property="menufour" />
+        <result column="menufive" property="menufive" />
+        <result column="menusix" property="menusix" />
+        <result column="menuseven" property="menuseven" />
+        <result column="menueight" property="menueight" />
+        <result column="menunine" property="menunine" />
+        <result column="menuten" property="menuten" />
+        <result column="eleven" property="eleven" />
+        <result column="twelve" property="twelve" />
+        <result column="thirteen" property="thirteen" />
+        <result column="fourteen" property="fourteen" />
+        <result column="fifteen" property="fifteen" />
+        <result column="sixteen" property="sixteen" />
+        <result column="seventeen" property="seventeen" />
+        <result column="eighteen" property="eighteen" />
+        <result column="nineteen" property="nineteen" />
+        <result column="twenty" property="twenty" />
+        <result column="twentyone" property="twentyone" />
+        <result column="twentytwo" property="twentytwo" />
+        <result column="twentythree" property="twentythree" />
+        <result column="twentyfour" property="twentyfour" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        backuserid, backname, account, password, date, role, menuone, menutwo, menuthree, menufour, menufive, menusix, menuseven, menueight, menunine, menuten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour
+    </sql>
+
+</mapper>

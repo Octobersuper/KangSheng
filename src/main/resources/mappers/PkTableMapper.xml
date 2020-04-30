@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcf.mapper.PkTableMapper">
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.PkTable">
+        <id column="pkid" property="pkid" />
+        <result column="roomno" property="roomno" />
+        <result column="start_date" property="startDate" />
+        <result column="max_person" property="maxPerson" />
+        <result column="houseid" property="houseid" />
+        <result column="game_type" property="gameType" />
+        <result column="room_type" property="roomType" />
+        <result column="fen" property="fen" />
+        <result column="paytype" property="paytype" />
+        <result column="max_number" property="maxNumber" />
+        <result column="log" property="log" />
+        <result column="clubid" property="clubid" />
+        <result column="game_number" property="gameNumber" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        pkid, roomno, start_date, max_person, houseid, game_type, room_type, fen, paytype, max_number, log, clubid, game_number
+    </sql>
+
+    <select id="selectOneWeek" resultType="com.zcf.pojo.PkTable">
+        SELECT * FROM pk_table WHERE YEARWEEK(date_format(start_date,'%Y-%m-%d')) = YEARWEEK(now());
+    </select>
+    <select id="selectOneMonth" resultType="com.zcf.pojo.PkTable">
+        SELECT * FROM pk_table WHERE DATE_FORMAT( start_date, '%Y%m' ) = DATE_FORMAT( CURDATE( ) , '%Y%m' )
+    </select>
+
+</mapper>

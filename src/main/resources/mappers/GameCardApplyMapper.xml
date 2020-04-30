@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.GameCardApplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.GameCardApply">
+        <id column="applyid" property="applyid" />
+        <result column="userid" property="userid" />
+        <result column="circlenumber" property="circlenumber" />
+        <result column="date" property="date" />
+        <result column="state" property="state" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        applyid, userid, circlenumber, date, state
+    </sql>
+
+</mapper>

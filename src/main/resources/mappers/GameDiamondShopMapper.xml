@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main.java.com.zcf.mapper.GameDiamondShopMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zcf.pojo.GameDiamondShop">
+        <id column="diamondid" property="diamondid" />
+        <result column="diamondname" property="diamondname" />
+        <result column="realvalue" property="realvalue" />
+        <result column="price" property="price" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        diamondid, diamondname, realvalue, price
+    </sql>
+
+</mapper>
